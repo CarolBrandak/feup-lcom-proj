@@ -1,0 +1,9 @@
+<map id="checkMouseEvent" name="checkMouseEvent">
+<area shape="rect" id="node1" title="Checks the mouse events based on the packet, like if the mouse is on top of something and if the mous..." alt="" coords="5,56,145,83"/>
+<area shape="rect" id="node2" href="$gameController_8c.html#a4cbfdb17bf51e00546880626f7e80429" title="Initializes all the game&#39;s structs." alt="" coords="198,31,287,57"/>
+<area shape="rect" id="node7" href="$mouse_8c.html#a51bdeceb23090b47dac1e68b4c95fba5" title="Resets the position of the mouse." alt="" coords="193,81,292,108"/>
+<area shape="rect" id="node3" href="$entity_8c.html#af6d3971305663ba67ccf5d33c495790a" title="Initiates the entity given the type." alt="" coords="340,31,421,57"/>
+<area shape="rect" id="node4" href="$entity_8c.html#a3c4075f92b8b4c90ec5e4719826a0d69" title="Creates the array of struct Vehicle by generating random positions for them." alt="" coords="469,5,580,32"/>
+<area shape="rect" id="node6" href="$frog_8c.html#a1fda5ce5d442d925d88a7cac76e3b764" title="Initiates the frog." alt="" coords="489,56,560,83"/>
+<area shape="rect" id="node5" href="$vehicle_8c.html#ad8f74a4f0ace358582d7229148186e49" title="Initializes the vehicles." alt="" coords="628,5,719,32"/>
+</map>

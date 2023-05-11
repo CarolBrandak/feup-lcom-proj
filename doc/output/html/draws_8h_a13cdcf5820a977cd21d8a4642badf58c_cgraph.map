@@ -1,0 +1,4 @@
+<map id="void" name="void">
+<area shape="rect" id="node1" title="Draws a xpm to a buffer on position x and y of the screen" alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node2" href="$graphics__card_8c.html#a13dedae596f8db49682ee2bc77ce5568" title="Changes the color of one pyxel in the given position and to the color given in the argument and does ..." alt="" coords="104,5,239,32"/>
+</map>

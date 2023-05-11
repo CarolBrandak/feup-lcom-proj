@@ -1,0 +1,6 @@
+<map id="entMove" name="entMove">
+<area shape="rect" id="node1" title="Moves all game entites except the frog." alt="" coords="5,56,84,83"/>
+<area shape="rect" id="node2" href="$frog_8c.html#ad706af7de3eb09fc8454422fc9ca1a51" title="Determines if the frog is able to move considering the size of the move it wants to make and the type..." alt="" coords="132,5,241,32"/>
+<area shape="rect" id="node3" href="$entity_8c.html#a8b26ba21f9af4ad152162392b03cfef5" title="Colision function to determine whether or not the frog is on top of a log, returns true if it is and ..." alt="" coords="142,56,231,83"/>
+<area shape="rect" id="node4" href="$entity_8c.html#af9374e7d551bcc9b6072ccd225e72f1b" title="Colision function to determine whether or not the frog is on top of a turtle, returns true if it is a..." alt="" coords="135,107,238,133"/>
+</map>

@@ -1,0 +1,168 @@
+\hypertarget{mouse_8h}{}\doxysection{/home/andre/\+Documents/shared/proj/src/mouse.h File Reference}
+\label{mouse_8h}\index{/home/andre/Documents/shared/proj/src/mouse.h@{/home/andre/Documents/shared/proj/src/mouse.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}macros.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}images/mouse1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}images/mouse2.\+xpm\char`\"{}}\newline
+Include dependency graph for mouse.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structMouse}{Mouse}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structMouse}{Mouse}} struct with mouse images for regular mouse and hovering mouse as well as position and bool to know if its hovering something or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{mouse_8h_a20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes mouse interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes mouse interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() \mbox{\hyperlink{mouse_8h_a1d6e1e91145b734ed5955cc9657a7448}{build\+Packet}} (struct packet $\ast$\mbox{\hyperlink{mouse_8c_a26e83eca70c2b9169fbbb0eac7e32e32}{pp}})
+\begin{DoxyCompactList}\small\item\em Builds a packet based on the 3 bytes received during the interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{mouse_8h_a51bdeceb23090b47dac1e68b4c95fba5}{reset\+Mouse}} (\mbox{\hyperlink{structMouse}{Mouse}} $\ast$mouse)
+\begin{DoxyCompactList}\small\item\em Resets the position of the mouse. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() \mbox{\hyperlink{mouse_8h_a210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structMouse}{Mouse}} interrupt handler that knows exactly what byte it is going to receive from the output buffer (out of the 3 bytes) and stores it in an array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{mouse_8h_ad79408c03f479869b0f740b7fcbe9293}{init\+Mouse}} (\mbox{\hyperlink{structMouse}{Mouse}} $\ast$mouse)
+\begin{DoxyCompactList}\small\item\em Initializes the mouse by giving the position and loading the xpm. \end{DoxyCompactList}\item 
+struct packet \mbox{\hyperlink{mouse_8h_a0646d4d9d69b01c2ee78a500131407ed}{get\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em Returns the packet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{mouse_8h_ade2cb3059451f9962b9a5544f6bf377b}{toggle\+\_\+data\+\_\+report}} (uint8\+\_\+t toggle)
+\begin{DoxyCompactList}\small\item\em Enables or disables the mouse data report functionality based on the argument it is given. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mouse_8h_a1d6e1e91145b734ed5955cc9657a7448}\label{mouse_8h_a1d6e1e91145b734ed5955cc9657a7448}} 
+\index{mouse.h@{mouse.h}!buildPacket@{buildPacket}}
+\index{buildPacket@{buildPacket}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{buildPacket()}{buildPacket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() build\+Packet (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{pp }\end{DoxyParamCaption})}
+
+
+
+Builds a packet based on the 3 bytes received during the interrupts. 
+
+\mbox{\Hypertarget{mouse_8h_a0646d4d9d69b01c2ee78a500131407ed}\label{mouse_8h_a0646d4d9d69b01c2ee78a500131407ed}} 
+\index{mouse.h@{mouse.h}!getPacket@{getPacket}}
+\index{getPacket@{getPacket}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{getPacket()}{getPacket()}}
+{\footnotesize\ttfamily struct packet get\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the packet. 
+
+\begin{DoxyReturn}{Returns}
+struct packet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mouse_8h_ad79408c03f479869b0f740b7fcbe9293}\label{mouse_8h_ad79408c03f479869b0f740b7fcbe9293}} 
+\index{mouse.h@{mouse.h}!initMouse@{initMouse}}
+\index{initMouse@{initMouse}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{initMouse()}{initMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} init\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMouse}{Mouse}} $\ast$}]{mouse }\end{DoxyParamCaption})}
+
+
+
+Initializes the mouse by giving the position and loading the xpm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse} & \mbox{\hyperlink{structMouse}{Mouse}} struct \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mouse_8h_a210374b50462acdedab00df64d5cea3c}\label{mouse_8h_a210374b50462acdedab00df64d5cea3c}} 
+\index{mouse.h@{mouse.h}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{structMouse}{Mouse}} interrupt handler that knows exactly what byte it is going to receive from the output buffer (out of the 3 bytes) and stores it in an array. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{mouse_8h_a210374b50462acdedab00df64d5cea3c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_a20285aed4b3ef45812cd967532dd09db}\label{mouse_8h_a20285aed4b3ef45812cd967532dd09db}} 
+\index{mouse.h@{mouse.h}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes mouse interrupts. 
+
+\mbox{\Hypertarget{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}\label{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}} 
+\index{mouse.h@{mouse.h}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes mouse interrupts. 
+
+\mbox{\Hypertarget{mouse_8h_a51bdeceb23090b47dac1e68b4c95fba5}\label{mouse_8h_a51bdeceb23090b47dac1e68b4c95fba5}} 
+\index{mouse.h@{mouse.h}!resetMouse@{resetMouse}}
+\index{resetMouse@{resetMouse}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{resetMouse()}{resetMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} reset\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMouse}{Mouse}} $\ast$}]{mouse }\end{DoxyParamCaption})}
+
+
+
+Resets the position of the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse} & Struct mouse \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mouse_8h_ade2cb3059451f9962b9a5544f6bf377b}\label{mouse_8h_ade2cb3059451f9962b9a5544f6bf377b}} 
+\index{mouse.h@{mouse.h}!toggle\_data\_report@{toggle\_data\_report}}
+\index{toggle\_data\_report@{toggle\_data\_report}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{toggle\_data\_report()}{toggle\_data\_report()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} toggle\+\_\+data\+\_\+report (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{toggle }\end{DoxyParamCaption})}
+
+
+
+Enables or disables the mouse data report functionality based on the argument it is given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em toggle} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{mouse_8h_ade2cb3059451f9962b9a5544f6bf377b_cgraph}
+\end{center}
+\end{figure}

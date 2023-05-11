@@ -1,0 +1,33 @@
+<map id="DeviceHandler" name="DeviceHandler">
+<area shape="rect" id="node1" title="Handles all the interrupts from all the devices depending on the current state of the game,..." alt="" coords="5,487,124,513"/>
+<area shape="rect" id="node2" href="$gameController_8c.html#aab150031c2be1c6f6ad55dad148881ac" title="Checks all game events like whether the frog is on top or got hit by any entities,..." alt="" coords="194,183,291,209"/>
+<area shape="rect" id="node9" href="$gameController_8c.html#a76d5d2eba016df1778bd6e41e2df7b17" title="Checks the mouse events based on the packet, like if the mouse is on top of something and if the mous..." alt="" coords="173,284,313,311"/>
+<area shape="rect" id="node15" href="$mouse_8c.html#a51bdeceb23090b47dac1e68b4c95fba5" title="Resets the position of the mouse." alt="" coords="369,360,467,387"/>
+<area shape="rect" id="node16" href="$gameController_8c.html#a0bac5a6de1adf0810a30a7003997412f" title="Checks which option is the selected one in the pause menu." alt="" coords="172,335,313,361"/>
+<area shape="rect" id="node17" href="$draws_8c.html#a0fd1bfe62dd8084fc7e285925d219f60" title="Draws the help screen xpm." alt="" coords="201,487,285,513"/>
+<area shape="rect" id="node19" href="$draws_8c.html#aa13653318c21b0e6b86838e6091bfc9a" title="Draws the main menu." alt="" coords="197,588,288,615"/>
+<area shape="rect" id="node20" href="$draws_8c.html#a4cfdb0493e57a52fd11aed425f224244" title="Draws the mouse." alt="" coords="194,436,291,463"/>
+<area shape="rect" id="node21" href="$draws_8c.html#abffecc8333218f1d545c2d916f9fa070" title="Draws an overlay to display which option is being chosen in the pause menu." alt="" coords="175,639,310,665"/>
+<area shape="rect" id="node23" href="$gameController_8c.html#a6b174b7ece75ea95ae6e38361f88256f" title="Draws all game entites." alt="" coords="204,537,281,564"/>
+<area shape="rect" id="node27" href="$gameController_8c.html#adc651e3d024b553b8082706cac95eb95" title="Moves all game entites except the frog." alt="" coords="203,81,282,108"/>
+<area shape="rect" id="node29" href="$frog_8c.html#a94a58efc76204544797e17ed7ce00917" title="Changes the value of the variable frogIdle to determine if the froghas ended its animation otherwise ..." alt="" coords="185,689,300,716"/>
+<area shape="rect" id="node30" href="$mouse_8c.html#a0646d4d9d69b01c2ee78a500131407ed" title="Returns the packet." alt="" coords="200,740,285,767"/>
+<area shape="rect" id="node31" href="$gameController_8c.html#a27a1ab221f211c84e92f14fce9407ebc" title="Updates the Mouse struct based on the packet receiv." alt="" coords="187,791,298,817"/>
+<area shape="rect" id="node3" href="$entity_8c.html#a8b26ba21f9af4ad152162392b03cfef5" title="Colision function to determine whether or not the frog is on top of a log, returns true if it is and ..." alt="" coords="373,56,463,83"/>
+<area shape="rect" id="node4" href="$entity_8c.html#af9374e7d551bcc9b6072ccd225e72f1b" title="Colision function to determine whether or not the frog is on top of a turtle, returns true if it is a..." alt="" coords="367,107,469,133"/>
+<area shape="rect" id="node5" href="$entity_8c.html#accbf488c331ea3bc8244df8ee67f02d3" title="Colision function to know if a vehicle (car or truck) has hit the frog, returns true if it has." alt="" coords="361,157,475,184"/>
+<area shape="rect" id="node6" href="$gameController_8c.html#ac165fe517b083b5ccd861bf028a67b7e" title="Updates the current level." alt="" coords="375,208,461,235"/>
+<area shape="rect" id="node8" href="$frog_8c.html#afe5d12d7ab8da151ffd9a5ca04e89edc" title="Resets the frog when needed." alt="" coords="377,259,459,285"/>
+<area shape="rect" id="node7" href="$gameController_8c.html#a6a152bf3c66c34c70b098262ca220dbd" title="Updates the speed of all entities except the frog (called when the player goes to the next lvel)" alt="" coords="523,208,679,235"/>
+<area shape="rect" id="node10" href="$gameController_8c.html#a4cbfdb17bf51e00546880626f7e80429" title="Initializes all the game&#39;s structs." alt="" coords="373,309,463,336"/>
+<area shape="rect" id="node11" href="$entity_8c.html#af6d3971305663ba67ccf5d33c495790a" title="Initiates the entity given the type." alt="" coords="560,309,641,336"/>
+<area shape="rect" id="node12" href="$entity_8c.html#a3c4075f92b8b4c90ec5e4719826a0d69" title="Creates the array of struct Vehicle by generating random positions for them." alt="" coords="727,284,837,311"/>
+<area shape="rect" id="node14" href="$frog_8c.html#a1fda5ce5d442d925d88a7cac76e3b764" title="Initiates the frog." alt="" coords="747,335,817,361"/>
+<area shape="rect" id="node13" href="$vehicle_8c.html#ad8f74a4f0ace358582d7229148186e49" title="Initializes the vehicles." alt="" coords="885,284,976,311"/>
+<area shape="rect" id="node18" href="$graphics__card_8c.html#aef65eb37ccde0d764deb148a6af80344" title="Copies the buffer to the virtual adress of memory." alt="" coords="380,487,456,513"/>
+<area shape="rect" id="node22" href="$draws_8c.html#ac28e9770167b7e50d37eaca915cb6ace" title="Draws the pause menu xpm." alt="" coords="372,639,464,665"/>
+<area shape="rect" id="node24" href="$draws_8c.html#a937528253ca74c0bc6b17834ce4ad1ea" title="Draws the information bar." alt="" coords="380,537,456,564"/>
+<area shape="rect" id="node26" href="$entity_8c.html#a2a7e11f776da89351b15069c96267302" title="Draws frog in its position and in the correct direction." alt="" coords="377,588,459,615"/>
+<area shape="rect" id="node25" href="$draws_8c.html#a54bf0c3e09e69e16bf5afcfd857ee673" title="Draws the hours and minutes on the information bar." alt="" coords="557,537,644,564"/>
+<area shape="rect" id="node28" href="$frog_8c.html#ad706af7de3eb09fc8454422fc9ca1a51" title="Determines if the frog is able to move considering the size of the move it wants to make and the type..." alt="" coords="363,5,473,32"/>
+</map>

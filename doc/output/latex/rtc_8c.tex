@@ -1,0 +1,123 @@
+\hypertarget{rtc_8c}{}\doxysection{/home/andre/\+Documents/shared/proj/src/rtc.c File Reference}
+\label{rtc_8c}\index{/home/andre/Documents/shared/proj/src/rtc.c@{/home/andre/Documents/shared/proj/src/rtc.c}}
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes the rtc\textquotesingle{}s interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{rtc_8c_a9d4850bb2a488644672d43287f160622}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes the rtc\textquotesingle{}s interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{rtc_8c_af891c1669b5ea650f4827a67d9b0e769}{wait\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Waits for an rtc update so that we can make sure we won\textquotesingle{}t have any errors while waiting for its interruptions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{rtc_8c_a72dfeb3c07829a9cb89ef9cdc9e9e61f}{hex\+Int}} (uint8\+\_\+t time)
+\begin{DoxyCompactList}\small\item\em Converts an hexadecimal value to int so that the written value is the same, for example if the value is 64 in hexadecimal the funtion will return 64 in decimal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() \mbox{\hyperlink{rtc_8c_a0b9ae809cf571f61e54712a23c65348e}{rtc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em R\+TC interrupt handler that makes sure there are no erros and updates the varibales of hours and minutes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{rtc_8c_a6c52a1d32571a429369253ce7c3a3d7a}{rtc\+\_\+hook\+\_\+id}} =8
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_ae5af4ff48939d13d480f87e56a9385d6}{hour}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_a8ff981ec55c945940f4a0da7d8709b3c}{minute}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8c_a72dfeb3c07829a9cb89ef9cdc9e9e61f}\label{rtc_8c_a72dfeb3c07829a9cb89ef9cdc9e9e61f}} 
+\index{rtc.c@{rtc.c}!hexInt@{hexInt}}
+\index{hexInt@{hexInt}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{hexInt()}{hexInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} hex\+Int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{time }\end{DoxyParamCaption})}
+
+
+
+Converts an hexadecimal value to int so that the written value is the same, for example if the value is 64 in hexadecimal the funtion will return 64 in decimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & time in hexadecimal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int time in decimal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_a0b9ae809cf571f61e54712a23c65348e}\label{rtc_8c_a0b9ae809cf571f61e54712a23c65348e}} 
+\index{rtc.c@{rtc.c}!rtc\_ih@{rtc\_ih}}
+\index{rtc\_ih@{rtc\_ih}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_ih()}{rtc\_ih()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() rtc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+R\+TC interrupt handler that makes sure there are no erros and updates the varibales of hours and minutes. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{rtc_8c_a0b9ae809cf571f61e54712a23c65348e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89}\label{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89}} 
+\index{rtc.c@{rtc.c}!rtc\_subscribe\_int@{rtc\_subscribe\_int}}
+\index{rtc\_subscribe\_int@{rtc\_subscribe\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes the rtc\textquotesingle{}s interrupts. 
+
+\mbox{\Hypertarget{rtc_8c_a9d4850bb2a488644672d43287f160622}\label{rtc_8c_a9d4850bb2a488644672d43287f160622}} 
+\index{rtc.c@{rtc.c}!rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}}
+\index{rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes the rtc\textquotesingle{}s interrupts. 
+
+\mbox{\Hypertarget{rtc_8c_af891c1669b5ea650f4827a67d9b0e769}\label{rtc_8c_af891c1669b5ea650f4827a67d9b0e769}} 
+\index{rtc.c@{rtc.c}!waitUpdate@{waitUpdate}}
+\index{waitUpdate@{waitUpdate}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{waitUpdate()}{waitUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} wait\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Waits for an rtc update so that we can make sure we won\textquotesingle{}t have any errors while waiting for its interruptions. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{rtc_8c_ae5af4ff48939d13d480f87e56a9385d6}\label{rtc_8c_ae5af4ff48939d13d480f87e56a9385d6}} 
+\index{rtc.c@{rtc.c}!hour@{hour}}
+\index{hour@{hour}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily uint8\+\_\+t hour}
+
+\mbox{\Hypertarget{rtc_8c_a8ff981ec55c945940f4a0da7d8709b3c}\label{rtc_8c_a8ff981ec55c945940f4a0da7d8709b3c}} 
+\index{rtc.c@{rtc.c}!minute@{minute}}
+\index{minute@{minute}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{minute}{minute}}
+{\footnotesize\ttfamily uint8\+\_\+t minute}
+
+\mbox{\Hypertarget{rtc_8c_a6c52a1d32571a429369253ce7c3a3d7a}\label{rtc_8c_a6c52a1d32571a429369253ce7c3a3d7a}} 
+\index{rtc.c@{rtc.c}!rtc\_hook\_id@{rtc\_hook\_id}}
+\index{rtc\_hook\_id@{rtc\_hook\_id}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_hook\_id}{rtc\_hook\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} rtc\+\_\+hook\+\_\+id =8}
+

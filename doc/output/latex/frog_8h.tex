@@ -1,0 +1,131 @@
+\hypertarget{frog_8h}{}\doxysection{/home/andre/\+Documents/shared/proj/src/frog.h File Reference}
+\label{frog_8h}\index{/home/andre/Documents/shared/proj/src/frog.h@{/home/andre/Documents/shared/proj/src/frog.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}images/frog.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}images/frog/frog1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}images/frog/frog2.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}images/frog/frog3.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}images/frog/frog4.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}images/frog/frog5.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}images/frog/frog6.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}images/frog/frog7.\+xpm\char`\"{}}\newline
+Include dependency graph for frog.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{frog_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{frog_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structFrog}{Frog}}
+\begin{DoxyCompactList}\small\item\em Struct frog to store the frog\textquotesingle{}s position, xpm images for the animation and the index of which is the animation frame to be displayed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{frog_8h_a1fda5ce5d442d925d88a7cac76e3b764}{init\+Frog}} (\mbox{\hyperlink{structFrog}{Frog}} $\ast$frog)
+\begin{DoxyCompactList}\small\item\em Initiates the frog. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{frog_8h_afe5d12d7ab8da151ffd9a5ca04e89edc}{reset\+Frog}} (\mbox{\hyperlink{structFrog}{Frog}} $\ast$frog)
+\begin{DoxyCompactList}\small\item\em Resets the frog when needed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{frog_8h_ad706af7de3eb09fc8454422fc9ca1a51}{can\+Frog\+Move}} (\mbox{\hyperlink{structFrog}{Frog}} frog, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} move, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} size)
+\begin{DoxyCompactList}\small\item\em Determines if the frog is able to move considering the size of the move it wants to make and the type of move. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{frog_8h_a94a58efc76204544797e17ed7ce00917}{frog\+Animation}} (\mbox{\hyperlink{structFrog}{Frog}} $\ast$frog, \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} $\ast$\mbox{\hyperlink{gameController_8c_a201794d8529dcddf8275dc6a22d83313}{frog\+Idle}})
+\begin{DoxyCompactList}\small\item\em Changes the value of the variable frog\+Idle to determine if the froghas ended its animation otherwise just updates the index so that it can go to the next frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{frog_8h_a2c0e4edd8267dd33a8dc5cf44f7321c9}{x\+Res}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{frog_8h_ad706af7de3eb09fc8454422fc9ca1a51}\label{frog_8h_ad706af7de3eb09fc8454422fc9ca1a51}} 
+\index{frog.h@{frog.h}!canFrogMove@{canFrogMove}}
+\index{canFrogMove@{canFrogMove}!frog.h@{frog.h}}
+\doxysubsubsection{\texorpdfstring{canFrogMove()}{canFrogMove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} can\+Frog\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFrog}{Frog}}}]{frog,  }\item[{\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}}]{move,  }\item[{\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}}]{size }\end{DoxyParamCaption})}
+
+
+
+Determines if the frog is able to move considering the size of the move it wants to make and the type of move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frog} & Struct frog \\
+\hline
+{\em move} & type of move \\
+\hline
+{\em size} & size of move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{frog_8h_a94a58efc76204544797e17ed7ce00917}\label{frog_8h_a94a58efc76204544797e17ed7ce00917}} 
+\index{frog.h@{frog.h}!frogAnimation@{frogAnimation}}
+\index{frogAnimation@{frogAnimation}!frog.h@{frog.h}}
+\doxysubsubsection{\texorpdfstring{frogAnimation()}{frogAnimation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} frog\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFrog}{Frog}} $\ast$}]{frog,  }\item[{\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} $\ast$}]{frog\+Idle }\end{DoxyParamCaption})}
+
+
+
+Changes the value of the variable frog\+Idle to determine if the froghas ended its animation otherwise just updates the index so that it can go to the next frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frog} & \\
+\hline
+{\em frog\+Idle} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{frog_8h_a1fda5ce5d442d925d88a7cac76e3b764}\label{frog_8h_a1fda5ce5d442d925d88a7cac76e3b764}} 
+\index{frog.h@{frog.h}!initFrog@{initFrog}}
+\index{initFrog@{initFrog}!frog.h@{frog.h}}
+\doxysubsubsection{\texorpdfstring{initFrog()}{initFrog()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} init\+Frog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFrog}{Frog}} $\ast$}]{frog }\end{DoxyParamCaption})}
+
+
+
+Initiates the frog. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frog} & Receives a frog and initiates its values \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{frog_8h_afe5d12d7ab8da151ffd9a5ca04e89edc}\label{frog_8h_afe5d12d7ab8da151ffd9a5ca04e89edc}} 
+\index{frog.h@{frog.h}!resetFrog@{resetFrog}}
+\index{resetFrog@{resetFrog}!frog.h@{frog.h}}
+\doxysubsubsection{\texorpdfstring{resetFrog()}{resetFrog()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} reset\+Frog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structFrog}{Frog}} $\ast$}]{frog }\end{DoxyParamCaption})}
+
+
+
+Resets the frog when needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frog} & Receives a frog and resets its values \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{frog_8h_a2c0e4edd8267dd33a8dc5cf44f7321c9}\label{frog_8h_a2c0e4edd8267dd33a8dc5cf44f7321c9}} 
+\index{frog.h@{frog.h}!xRes@{xRes}}
+\index{xRes@{xRes}!frog.h@{frog.h}}
+\doxysubsubsection{\texorpdfstring{xRes}{xRes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} x\+Res}
+

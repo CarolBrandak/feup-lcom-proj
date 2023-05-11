@@ -1,0 +1,4 @@
+<map id="drawPauseOption" name="drawPauseOption">
+<area shape="rect" id="node1" title="Draws an overlay to display which option is being chosen in the pause menu." alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node2" href="$draws_8c.html#ac28e9770167b7e50d37eaca915cb6ace" title="Draws the pause menu xpm." alt="" coords="188,5,280,32"/>
+</map>

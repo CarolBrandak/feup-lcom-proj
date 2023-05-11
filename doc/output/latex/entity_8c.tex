@@ -1,0 +1,288 @@
+\hypertarget{entity_8c}{}\doxysection{/home/andre/\+Documents/shared/proj/src/entity.c File Reference}
+\label{entity_8c}\index{/home/andre/Documents/shared/proj/src/entity.c@{/home/andre/Documents/shared/proj/src/entity.c}}
+{\ttfamily \#include \char`\"{}entity.\+h\char`\"{}}\newline
+Include dependency graph for entity.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{entity_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8c_a59f2a440be91c55a3f8e5a3f2adf0e38}{void}} (create\+Logs(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent))
+\begin{DoxyCompactList}\small\item\em Creates the array of struct \mbox{\hyperlink{structLog}{Log}} by generating random positions for them. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8c_a36c31fc287d2cf3af6933f13df6d1b81}{void}} (create\+Turtle(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent))
+\begin{DoxyCompactList}\small\item\em Creates the array of struct \mbox{\hyperlink{structTurtle}{Turtle}} by generating random positions for them. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{entity_8c_a3c4075f92b8b4c90ec5e4719826a0d69}{create\+Vehicle}} (struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent)
+\begin{DoxyCompactList}\small\item\em Creates the array of struct \mbox{\hyperlink{structVehicle}{Vehicle}} by generating random positions for them. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{entity_8c_af6d3971305663ba67ccf5d33c495790a}{init\+Entity}} (struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent, \mbox{\hyperlink{entity_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}} type)
+\begin{DoxyCompactList}\small\item\em Initiates the entity given the type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{entity_8c_a2a7e11f776da89351b15069c96267302}{draw\+Frog}} (struct \mbox{\hyperlink{structEntity}{Entity}} ent, \mbox{\hyperlink{entity_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{gameController_8c_a53421c695d00016ab925777d423b4eb6}{direction}})
+\begin{DoxyCompactList}\small\item\em Draws frog in its position and in the correct direction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8c_a891b4e7f8ac178e91b465092beaa50cd}{int}} (draw\+Entity(struct \mbox{\hyperlink{structEntity}{Entity}} ent))
+\begin{DoxyCompactList}\small\item\em Receives an entity and draws it in its position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8c_a8284ec91a13d5aa06763e25af5d0b1ea}{void}} (switch\+Turtles\+Day(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent, \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} day))
+\begin{DoxyCompactList}\small\item\em Switches the turtles bool variable day to true or false depending on whether if its day or night. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8c_a44f9a67bed095eea943e81b480904efa}{void}} (switch\+Turtles\+Underwater(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent))
+\begin{DoxyCompactList}\small\item\em Switches the turtles bool variable underwater to true or false depending on the current value of said bool (if true makes it false and if false makes it true) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8c_a8ac50782958414341a3518c896f01d77}{void}} (move\+Logs(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent))
+\begin{DoxyCompactList}\small\item\em Updates the logs position based on their speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8c_a36147a2474885bb60282ffff46e25e9b}{void}} (move\+Turtles(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent))
+\begin{DoxyCompactList}\small\item\em Updates the turtles position based on their speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8c_a5530643ebe8c633a75555509a89a5496}{void}} (move\+Vehicles(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent))
+\begin{DoxyCompactList}\small\item\em Updates the vehicles position based on their speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8c_a31ba02fef156b93f0f56f611b98b66a5}{bool}} (move\+Frog(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent, \mbox{\hyperlink{entity_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} dir))
+\begin{DoxyCompactList}\small\item\em Moves the frog in the given direction, will return false if the move was not possible to be made. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{entity_8c_a8b26ba21f9af4ad152162392b03cfef5}{frog\+On\+Log}} (struct \mbox{\hyperlink{structEntity}{Entity}} ent\+Frog, struct \mbox{\hyperlink{structEntity}{Entity}} ent\+Logs, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} $\ast$\mbox{\hyperlink{gameController_8c_a6ea2e37d367f9efa43355b0310816326}{log\+Index}})
+\begin{DoxyCompactList}\small\item\em Colision function to determine whether or not the frog is on top of a log, returns true if it is and changes the int of the log index so that later we know in which log the frog is so that we can make the frog move automatically with the log based on its speed since different logs may have different speeds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{entity_8c_af9374e7d551bcc9b6072ccd225e72f1b}{frog\+On\+Turtle}} (struct \mbox{\hyperlink{structEntity}{Entity}} ent\+Frog, struct \mbox{\hyperlink{structEntity}{Entity}} ent\+Turtles, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} $\ast$\mbox{\hyperlink{gameController_8c_ac85edcb51042ce1c21caaece440dc7eb}{turtle\+Index}})
+\begin{DoxyCompactList}\small\item\em Colision function to determine whether or not the frog is on top of a turtle, returns true if it is and changes the int of the turtle index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{entity_8c_accbf488c331ea3bc8244df8ee67f02d3}{frog\+On\+Vehicle}} (struct \mbox{\hyperlink{structEntity}{Entity}} ent\+Frog, struct \mbox{\hyperlink{structEntity}{Entity}} ent\+Vehicle)
+\begin{DoxyCompactList}\small\item\em Colision function to know if a vehicle (car or truck) has hit the frog, returns true if it has. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{entity_8c_a31ba02fef156b93f0f56f611b98b66a5}\label{entity_8c_a31ba02fef156b93f0f56f611b98b66a5}} 
+\index{entity.c@{entity.c}!bool@{bool}}
+\index{bool@{bool}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{bool()}{bool()}}
+{\footnotesize\ttfamily bool (\begin{DoxyParamCaption}\item[{move\+Frog(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent, \mbox{\hyperlink{entity_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} dir)}]{ }\end{DoxyParamCaption})}
+
+
+
+Moves the frog in the given direction, will return false if the move was not possible to be made. 
+
+\mbox{\Hypertarget{entity_8c_a3c4075f92b8b4c90ec5e4719826a0d69}\label{entity_8c_a3c4075f92b8b4c90ec5e4719826a0d69}} 
+\index{entity.c@{entity.c}!createVehicle@{createVehicle}}
+\index{createVehicle@{createVehicle}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{createVehicle()}{createVehicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} create\+Vehicle (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$}]{ent }\end{DoxyParamCaption})}
+
+
+
+Creates the array of struct \mbox{\hyperlink{structVehicle}{Vehicle}} by generating random positions for them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{entity_8c_a3c4075f92b8b4c90ec5e4719826a0d69_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{entity_8c_a2a7e11f776da89351b15069c96267302}\label{entity_8c_a2a7e11f776da89351b15069c96267302}} 
+\index{entity.c@{entity.c}!drawFrog@{drawFrog}}
+\index{drawFrog@{drawFrog}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{drawFrog()}{drawFrog()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} draw\+Frog (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structEntity}{Entity}}}]{ent,  }\item[{\mbox{\hyperlink{entity_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Draws frog in its position and in the correct direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent} & \mbox{\hyperlink{structEntity}{Entity}} frog \\
+\hline
+{\em direction} & Direction in which to draw the frog (up,down,left,right) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{entity_8c_a8b26ba21f9af4ad152162392b03cfef5}\label{entity_8c_a8b26ba21f9af4ad152162392b03cfef5}} 
+\index{entity.c@{entity.c}!frogOnLog@{frogOnLog}}
+\index{frogOnLog@{frogOnLog}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{frogOnLog()}{frogOnLog()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} frog\+On\+Log (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structEntity}{Entity}}}]{ent\+Frog,  }\item[{struct \mbox{\hyperlink{structEntity}{Entity}}}]{ent\+Logs,  }\item[{\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} $\ast$}]{log\+Index }\end{DoxyParamCaption})}
+
+
+
+Colision function to determine whether or not the frog is on top of a log, returns true if it is and changes the int of the log index so that later we know in which log the frog is so that we can make the frog move automatically with the log based on its speed since different logs may have different speeds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+Frog} & \mbox{\hyperlink{structEntity}{Entity}} \mbox{\hyperlink{structFrog}{Frog}} \\
+\hline
+{\em ent\+Logs} & \mbox{\hyperlink{structEntity}{Entity}} \mbox{\hyperlink{structLog}{Log}} \\
+\hline
+{\em log\+Index} & index of the log in the log array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{entity_8c_af9374e7d551bcc9b6072ccd225e72f1b}\label{entity_8c_af9374e7d551bcc9b6072ccd225e72f1b}} 
+\index{entity.c@{entity.c}!frogOnTurtle@{frogOnTurtle}}
+\index{frogOnTurtle@{frogOnTurtle}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{frogOnTurtle()}{frogOnTurtle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} frog\+On\+Turtle (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structEntity}{Entity}}}]{ent\+Frog,  }\item[{struct \mbox{\hyperlink{structEntity}{Entity}}}]{ent\+Turtles,  }\item[{\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} $\ast$}]{turtle\+Index }\end{DoxyParamCaption})}
+
+
+
+Colision function to determine whether or not the frog is on top of a turtle, returns true if it is and changes the int of the turtle index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+Frog} & \mbox{\hyperlink{structEntity}{Entity}} \mbox{\hyperlink{structFrog}{Frog}} \\
+\hline
+{\em ent\+Turtles} & \mbox{\hyperlink{structEntity}{Entity}} vehicle \\
+\hline
+{\em turtle\+Index} & index of the turtle in the turtle array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{entity_8c_accbf488c331ea3bc8244df8ee67f02d3}\label{entity_8c_accbf488c331ea3bc8244df8ee67f02d3}} 
+\index{entity.c@{entity.c}!frogOnVehicle@{frogOnVehicle}}
+\index{frogOnVehicle@{frogOnVehicle}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{frogOnVehicle()}{frogOnVehicle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} frog\+On\+Vehicle (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structEntity}{Entity}}}]{ent\+Frog,  }\item[{struct \mbox{\hyperlink{structEntity}{Entity}}}]{ent\+Vehicle }\end{DoxyParamCaption})}
+
+
+
+Colision function to know if a vehicle (car or truck) has hit the frog, returns true if it has. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent\+Frog} & \mbox{\hyperlink{structEntity}{Entity}} frog \\
+\hline
+{\em ent\+Vehicle} & \mbox{\hyperlink{structEntity}{Entity}} vehicle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{entity_8c_af6d3971305663ba67ccf5d33c495790a}\label{entity_8c_af6d3971305663ba67ccf5d33c495790a}} 
+\index{entity.c@{entity.c}!initEntity@{initEntity}}
+\index{initEntity@{initEntity}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{initEntity()}{initEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} init\+Entity (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$}]{ent,  }\item[{\mbox{\hyperlink{entity_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Initiates the entity given the type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ent} & entity \\
+\hline
+{\em type} & type of entity \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{entity_8c_af6d3971305663ba67ccf5d33c495790a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{entity_8c_a891b4e7f8ac178e91b465092beaa50cd}\label{entity_8c_a891b4e7f8ac178e91b465092beaa50cd}} 
+\index{entity.c@{entity.c}!int@{int}}
+\index{int@{int}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{int()}{int()}}
+{\footnotesize\ttfamily int (\begin{DoxyParamCaption}\item[{draw\+Entity(struct \mbox{\hyperlink{structEntity}{Entity}} ent)}]{ }\end{DoxyParamCaption})}
+
+
+
+Receives an entity and draws it in its position. 
+
+\mbox{\Hypertarget{entity_8c_a59f2a440be91c55a3f8e5a3f2adf0e38}\label{entity_8c_a59f2a440be91c55a3f8e5a3f2adf0e38}} 
+\index{entity.c@{entity.c}!void@{void}}
+\index{void@{void}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{create\+Logs(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent)}]{ }\end{DoxyParamCaption})}
+
+
+
+Creates the array of struct \mbox{\hyperlink{structLog}{Log}} by generating random positions for them. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{entity_8c_a59f2a440be91c55a3f8e5a3f2adf0e38_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{entity_8c_a36c31fc287d2cf3af6933f13df6d1b81}\label{entity_8c_a36c31fc287d2cf3af6933f13df6d1b81}} 
+\index{entity.c@{entity.c}!void@{void}}
+\index{void@{void}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{create\+Turtle(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent)}]{ }\end{DoxyParamCaption})}
+
+
+
+Creates the array of struct \mbox{\hyperlink{structTurtle}{Turtle}} by generating random positions for them. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{entity_8c_a36c31fc287d2cf3af6933f13df6d1b81_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{entity_8c_a8ac50782958414341a3518c896f01d77}\label{entity_8c_a8ac50782958414341a3518c896f01d77}} 
+\index{entity.c@{entity.c}!void@{void}}
+\index{void@{void}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{move\+Logs(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent)}]{ }\end{DoxyParamCaption})}
+
+
+
+Updates the logs position based on their speed. 
+
+\mbox{\Hypertarget{entity_8c_a36147a2474885bb60282ffff46e25e9b}\label{entity_8c_a36147a2474885bb60282ffff46e25e9b}} 
+\index{entity.c@{entity.c}!void@{void}}
+\index{void@{void}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{move\+Turtles(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent)}]{ }\end{DoxyParamCaption})}
+
+
+
+Updates the turtles position based on their speed. 
+
+\mbox{\Hypertarget{entity_8c_a5530643ebe8c633a75555509a89a5496}\label{entity_8c_a5530643ebe8c633a75555509a89a5496}} 
+\index{entity.c@{entity.c}!void@{void}}
+\index{void@{void}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{move\+Vehicles(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent)}]{ }\end{DoxyParamCaption})}
+
+
+
+Updates the vehicles position based on their speed. 
+
+\mbox{\Hypertarget{entity_8c_a8284ec91a13d5aa06763e25af5d0b1ea}\label{entity_8c_a8284ec91a13d5aa06763e25af5d0b1ea}} 
+\index{entity.c@{entity.c}!void@{void}}
+\index{void@{void}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{switch\+Turtles\+Day(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent, \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} day)}]{ }\end{DoxyParamCaption})}
+
+
+
+Switches the turtles bool variable day to true or false depending on whether if its day or night. 
+
+\mbox{\Hypertarget{entity_8c_a44f9a67bed095eea943e81b480904efa}\label{entity_8c_a44f9a67bed095eea943e81b480904efa}} 
+\index{entity.c@{entity.c}!void@{void}}
+\index{void@{void}!entity.c@{entity.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{switch\+Turtles\+Underwater(struct \mbox{\hyperlink{structEntity}{Entity}} $\ast$ent)}]{ }\end{DoxyParamCaption})}
+
+
+
+Switches the turtles bool variable underwater to true or false depending on the current value of said bool (if true makes it false and if false makes it true) 
+

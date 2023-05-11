@@ -1,0 +1,6 @@
+<map id="initGame" name="initGame">
+<area shape="rect" id="node1" title="Initializes the mouse and loads the map as well as all of the menus." alt="" coords="5,31,88,57"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#ad79408c03f479869b0f740b7fcbe9293" title="Initializes the mouse by giving the position and loading the xpm." alt="" coords="136,5,223,32"/>
+<area shape="rect" id="node3" href="$draws_8c.html#aab366bb404b4186a11867fb304f165e4" title="Loads all the xpms that are going to be used apart from the entities." alt="" coords="140,56,219,83"/>
+<area shape="rect" id="node4" href="$draws_8c.html#aa13653318c21b0e6b86838e6091bfc9a" title="Draws the main menu." alt="" coords="271,56,361,83"/>
+</map>

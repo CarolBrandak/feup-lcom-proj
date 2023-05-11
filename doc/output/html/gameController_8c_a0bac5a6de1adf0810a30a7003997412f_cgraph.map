@@ -1,0 +1,4 @@
+<map id="checkPauseOption" name="checkPauseOption">
+<area shape="rect" id="node1" title="Checks which option is the selected one in the pause menu." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a51bdeceb23090b47dac1e68b4c95fba5" title="Resets the position of the mouse." alt="" coords="195,5,293,32"/>
+</map>

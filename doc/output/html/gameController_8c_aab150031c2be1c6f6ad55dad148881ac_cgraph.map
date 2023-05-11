@@ -1,0 +1,9 @@
+<map id="checkEvent" name="checkEvent">
+<area shape="rect" id="node1" title="Checks all game events like whether the frog is on top or got hit by any entities,..." alt="" coords="5,107,103,133"/>
+<area shape="rect" id="node2" href="$entity_8c.html#a8b26ba21f9af4ad152162392b03cfef5" title="Colision function to determine whether or not the frog is on top of a log, returns true if it is and ..." alt="" coords="163,5,252,32"/>
+<area shape="rect" id="node3" href="$entity_8c.html#af9374e7d551bcc9b6072ccd225e72f1b" title="Colision function to determine whether or not the frog is on top of a turtle, returns true if it is a..." alt="" coords="156,56,259,83"/>
+<area shape="rect" id="node4" href="$entity_8c.html#accbf488c331ea3bc8244df8ee67f02d3" title="Colision function to know if a vehicle (car or truck) has hit the frog, returns true if it has." alt="" coords="151,107,264,133"/>
+<area shape="rect" id="node5" href="$gameController_8c.html#ac165fe517b083b5ccd861bf028a67b7e" title="Updates the current level." alt="" coords="164,157,251,184"/>
+<area shape="rect" id="node7" href="$frog_8c.html#afe5d12d7ab8da151ffd9a5ca04e89edc" title="Resets the frog when needed." alt="" coords="166,208,249,235"/>
+<area shape="rect" id="node6" href="$gameController_8c.html#a6a152bf3c66c34c70b098262ca220dbd" title="Updates the speed of all entities except the frog (called when the player goes to the next lvel)" alt="" coords="312,157,468,184"/>
+</map>

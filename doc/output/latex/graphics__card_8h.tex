@@ -1,0 +1,62 @@
+\hypertarget{graphics__card_8h}{}\doxysection{/home/andre/\+Documents/shared/proj/src/graphics\+\_\+card.h File Reference}
+\label{graphics__card_8h}\index{/home/andre/Documents/shared/proj/src/graphics\_card.h@{/home/andre/Documents/shared/proj/src/graphics\_card.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for graphics\+\_\+card.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{graphics__card_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics__card_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{graphics__card_8h_a29e12d989ec405e661e02556aa1a12d9}{set\+\_\+graphics\+\_\+mode}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Sets the graphics card to operate in the mode given in the argument, also stores the values of h\+Res and v\+Res as well as the number of bytes per pyxel for later use. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{graphics__card_8h_a13dedae596f8db49682ee2bc77ce5568}{change\+Color\+Pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Changes the color of one pyxel in the given position and to the color given in the argument and does so by memcpy to a buffer, not the memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() \mbox{\hyperlink{graphics__card_8h_aef65eb37ccde0d764deb148a6af80344}{vg\+\_\+copy}} ()
+\begin{DoxyCompactList}\small\item\em Copies the buffer to the virtual adress of memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{graphics__card_8h_a13dedae596f8db49682ee2bc77ce5568}\label{graphics__card_8h_a13dedae596f8db49682ee2bc77ce5568}} 
+\index{graphics\_card.h@{graphics\_card.h}!changeColorPixel@{changeColorPixel}}
+\index{changeColorPixel@{changeColorPixel}!graphics\_card.h@{graphics\_card.h}}
+\doxysubsubsection{\texorpdfstring{changeColorPixel()}{changeColorPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() change\+Color\+Pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Changes the color of one pyxel in the given position and to the color given in the argument and does so by memcpy to a buffer, not the memory. 
+
+\mbox{\Hypertarget{graphics__card_8h_a29e12d989ec405e661e02556aa1a12d9}\label{graphics__card_8h_a29e12d989ec405e661e02556aa1a12d9}} 
+\index{graphics\_card.h@{graphics\_card.h}!set\_graphics\_mode@{set\_graphics\_mode}}
+\index{set\_graphics\_mode@{set\_graphics\_mode}!graphics\_card.h@{graphics\_card.h}}
+\doxysubsubsection{\texorpdfstring{set\_graphics\_mode()}{set\_graphics\_mode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() set\+\_\+graphics\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Sets the graphics card to operate in the mode given in the argument, also stores the values of h\+Res and v\+Res as well as the number of bytes per pyxel for later use. 
+
+\mbox{\Hypertarget{graphics__card_8h_aef65eb37ccde0d764deb148a6af80344}\label{graphics__card_8h_aef65eb37ccde0d764deb148a6af80344}} 
+\index{graphics\_card.h@{graphics\_card.h}!vg\_copy@{vg\_copy}}
+\index{vg\_copy@{vg\_copy}!graphics\_card.h@{graphics\_card.h}}
+\doxysubsubsection{\texorpdfstring{vg\_copy()}{vg\_copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() vg\+\_\+copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Copies the buffer to the virtual adress of memory. 
+

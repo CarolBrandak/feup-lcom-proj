@@ -1,0 +1,325 @@
+\hypertarget{draws_8c}{}\doxysection{/home/andre/\+Documents/shared/proj/src/draws.c File Reference}
+\label{draws_8c}\index{/home/andre/Documents/shared/proj/src/draws.c@{/home/andre/Documents/shared/proj/src/draws.c}}
+{\ttfamily \#include \char`\"{}draws.\+h\char`\"{}}\newline
+Include dependency graph for draws.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draws_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{draws_8c_aab366bb404b4186a11867fb304f165e4}{load\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Loads all the xpms that are going to be used apart from the entities. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{draws_8c_aa13653318c21b0e6b86838e6091bfc9a}{draw\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the main menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{draws_8c_a0fd1bfe62dd8084fc7e285925d219f60}{draw\+Help}} ()
+\begin{DoxyCompactList}\small\item\em Draws the help screen xpm. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{draws_8c_a4cfdb0493e57a52fd11aed425f224244}{draw\+Mouse}} (\mbox{\hyperlink{structMouse}{Mouse}} mouse)
+\begin{DoxyCompactList}\small\item\em Draws the mouse. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{draws_8c_a54bf0c3e09e69e16bf5afcfd857ee673}{draw\+Time}} (\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} time\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em Draws the hours and minutes on the information bar. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{draws_8c_a937528253ca74c0bc6b17834ce4ad1ea}{draw\+Bar}} (\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} level, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} lives, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} time\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em Draws the information bar. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{draws_8c_ac28e9770167b7e50d37eaca915cb6ace}{draw\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em Draws the pause menu xpm. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{draws_8c_abffecc8333218f1d545c2d916f9fa070}{draw\+Pause\+Option}} (\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} option)
+\begin{DoxyCompactList}\small\item\em Draws an overlay to display which option is being chosen in the pause menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{draws_8c_ae83980cc24929ba4acfa70bac886c007}{int}} (draw\+Background(\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} day))
+\begin{DoxyCompactList}\small\item\em Draws the background where it can either be day or night. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{draws_8c_a13cdcf5820a977cd21d8a4642badf58c}{void}} (draw(\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} x, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} y, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+width, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+height, uint32\+\_\+t $\ast$map))
+\begin{DoxyCompactList}\small\item\em Draws a xpm to a buffer on position x and y of the screen ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{draws_8c_a682cf124b511ec1e9127569409144dbd}{void}} (draw\+Down(\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} x, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} y, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+width, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+height, uint32\+\_\+t $\ast$map))
+\begin{DoxyCompactList}\small\item\em Draws a xpm to a buffer on position x and y of the screen but with the image rotated 180 degress. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{draws_8c_ab48197cba011564b78097f03dfc692db}{void}} (draw\+Left(\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} x, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} y, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+width, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+height, uint32\+\_\+t $\ast$map))
+\begin{DoxyCompactList}\small\item\em Draws a xpm to a buffer on position x and y of the screen but with the image rotated 270 degress to the right. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{draws_8c_ac8e3848b1737c4a905648ba4424f7382}{void}} (draw\+Right(\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} x, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} y, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+width, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+height, uint32\+\_\+t $\ast$map))
+\begin{DoxyCompactList}\small\item\em Draws a xpm to a buffer on position x and y of the screen but with the image rotated 90 degress to the right. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structBackground}{Background}} \mbox{\hyperlink{draws_8c_a49111e80b5373495583964acacd8a70c}{background}}
+\item 
+struct \mbox{\hyperlink{structBar}{Bar}} \mbox{\hyperlink{draws_8c_aedac96985a517f85badc209254dea53e}{bar}}
+\item 
+struct \mbox{\hyperlink{structPause}{Pause}} \mbox{\hyperlink{draws_8c_a9650fcc2735f6483fd8cf0e4ca8169b0}{pause\+Window}}
+\item 
+struct \mbox{\hyperlink{structMenu}{Menu}} \mbox{\hyperlink{draws_8c_a5081ede0ad10bf28dfce18536dacb419}{menu}}
+\item 
+struct \mbox{\hyperlink{structHelp}{Help}} \mbox{\hyperlink{draws_8c_a2da689c7f4d1662d966aba3dc08f53e5}{help}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{draws_8c_a937528253ca74c0bc6b17834ce4ad1ea}\label{draws_8c_a937528253ca74c0bc6b17834ce4ad1ea}} 
+\index{draws.c@{draws.c}!drawBar@{drawBar}}
+\index{drawBar@{drawBar}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{drawBar()}{drawBar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} draw\+Bar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}}]{level,  }\item[{\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}}]{lives,  }\item[{\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}}]{time\mbox{[}2\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Draws the information bar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Current level \\
+\hline
+{\em lives} & number of lives \\
+\hline
+{\em time} & array containing the int values of hours and minutes \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{draws_8c_a937528253ca74c0bc6b17834ce4ad1ea_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draws_8c_a0fd1bfe62dd8084fc7e285925d219f60}\label{draws_8c_a0fd1bfe62dd8084fc7e285925d219f60}} 
+\index{draws.c@{draws.c}!drawHelp@{drawHelp}}
+\index{drawHelp@{drawHelp}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{drawHelp()}{drawHelp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} draw\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the help screen xpm. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{draws_8c_a0fd1bfe62dd8084fc7e285925d219f60_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draws_8c_aa13653318c21b0e6b86838e6091bfc9a}\label{draws_8c_aa13653318c21b0e6b86838e6091bfc9a}} 
+\index{draws.c@{draws.c}!drawMenu@{drawMenu}}
+\index{drawMenu@{drawMenu}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{drawMenu()}{drawMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} draw\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the main menu. 
+
+\mbox{\Hypertarget{draws_8c_a4cfdb0493e57a52fd11aed425f224244}\label{draws_8c_a4cfdb0493e57a52fd11aed425f224244}} 
+\index{draws.c@{draws.c}!drawMouse@{drawMouse}}
+\index{drawMouse@{drawMouse}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{drawMouse()}{drawMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} draw\+Mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMouse}{Mouse}}}]{mouse }\end{DoxyParamCaption})}
+
+
+
+Draws the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse} & struct mouse containing mouse position and image \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{draws_8c_a4cfdb0493e57a52fd11aed425f224244_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draws_8c_ac28e9770167b7e50d37eaca915cb6ace}\label{draws_8c_ac28e9770167b7e50d37eaca915cb6ace}} 
+\index{draws.c@{draws.c}!drawPause@{drawPause}}
+\index{drawPause@{drawPause}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{drawPause()}{drawPause()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} draw\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the pause menu xpm. 
+
+\mbox{\Hypertarget{draws_8c_abffecc8333218f1d545c2d916f9fa070}\label{draws_8c_abffecc8333218f1d545c2d916f9fa070}} 
+\index{draws.c@{draws.c}!drawPauseOption@{drawPauseOption}}
+\index{drawPauseOption@{drawPauseOption}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{drawPauseOption()}{drawPauseOption()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} draw\+Pause\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}}}]{option }\end{DoxyParamCaption})}
+
+
+
+Draws an overlay to display which option is being chosen in the pause menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em option} & true for option one, false for option two \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{draws_8c_abffecc8333218f1d545c2d916f9fa070_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draws_8c_a54bf0c3e09e69e16bf5afcfd857ee673}\label{draws_8c_a54bf0c3e09e69e16bf5afcfd857ee673}} 
+\index{draws.c@{draws.c}!drawTime@{drawTime}}
+\index{drawTime@{drawTime}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{drawTime()}{drawTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} draw\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}}]{time\mbox{[}2\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Draws the hours and minutes on the information bar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & array containing the int values of hours and minutes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{draws_8c_ae83980cc24929ba4acfa70bac886c007}\label{draws_8c_ae83980cc24929ba4acfa70bac886c007}} 
+\index{draws.c@{draws.c}!int@{int}}
+\index{int@{int}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{int()}{int()}}
+{\footnotesize\ttfamily int (\begin{DoxyParamCaption}\item[{draw\+Background(\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} day)}]{ }\end{DoxyParamCaption})}
+
+
+
+Draws the background where it can either be day or night. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draws_8c_ae83980cc24929ba4acfa70bac886c007_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draws_8c_aab366bb404b4186a11867fb304f165e4}\label{draws_8c_aab366bb404b4186a11867fb304f165e4}} 
+\index{draws.c@{draws.c}!loadMap@{loadMap}}
+\index{loadMap@{loadMap}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{loadMap()}{loadMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} load\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads all the xpms that are going to be used apart from the entities. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{draws_8c_aab366bb404b4186a11867fb304f165e4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draws_8c_a13cdcf5820a977cd21d8a4642badf58c}\label{draws_8c_a13cdcf5820a977cd21d8a4642badf58c}} 
+\index{draws.c@{draws.c}!void@{void}}
+\index{void@{void}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{draw(\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} x, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} y, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+width, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+height, uint32\+\_\+t $\ast$map)}]{ }\end{DoxyParamCaption})}
+
+
+
+Draws a xpm to a buffer on position x and y of the screen ~\newline
+ 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{draws_8c_a13cdcf5820a977cd21d8a4642badf58c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draws_8c_a682cf124b511ec1e9127569409144dbd}\label{draws_8c_a682cf124b511ec1e9127569409144dbd}} 
+\index{draws.c@{draws.c}!void@{void}}
+\index{void@{void}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{draw\+Down(\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} x, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} y, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+width, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+height, uint32\+\_\+t $\ast$map)}]{ }\end{DoxyParamCaption})}
+
+
+
+Draws a xpm to a buffer on position x and y of the screen but with the image rotated 180 degress. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{draws_8c_a682cf124b511ec1e9127569409144dbd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draws_8c_ab48197cba011564b78097f03dfc692db}\label{draws_8c_ab48197cba011564b78097f03dfc692db}} 
+\index{draws.c@{draws.c}!void@{void}}
+\index{void@{void}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{draw\+Left(\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} x, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} y, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+width, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+height, uint32\+\_\+t $\ast$map)}]{ }\end{DoxyParamCaption})}
+
+
+
+Draws a xpm to a buffer on position x and y of the screen but with the image rotated 270 degress to the right. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{draws_8c_ab48197cba011564b78097f03dfc692db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draws_8c_ac8e3848b1737c4a905648ba4424f7382}\label{draws_8c_ac8e3848b1737c4a905648ba4424f7382}} 
+\index{draws.c@{draws.c}!void@{void}}
+\index{void@{void}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{void()}{void()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void (\begin{DoxyParamCaption}\item[{draw\+Right(\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} x, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} y, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+width, \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} img\+\_\+height, uint32\+\_\+t $\ast$map)}]{ }\end{DoxyParamCaption})}
+
+
+
+Draws a xpm to a buffer on position x and y of the screen but with the image rotated 90 degress to the right. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{draws_8c_ac8e3848b1737c4a905648ba4424f7382_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{draws_8c_a49111e80b5373495583964acacd8a70c}\label{draws_8c_a49111e80b5373495583964acacd8a70c}} 
+\index{draws.c@{draws.c}!background@{background}}
+\index{background@{background}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structBackground}{Background}} background}
+
+\mbox{\Hypertarget{draws_8c_aedac96985a517f85badc209254dea53e}\label{draws_8c_aedac96985a517f85badc209254dea53e}} 
+\index{draws.c@{draws.c}!bar@{bar}}
+\index{bar@{bar}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{bar}{bar}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structBar}{Bar}} bar}
+
+\mbox{\Hypertarget{draws_8c_a2da689c7f4d1662d966aba3dc08f53e5}\label{draws_8c_a2da689c7f4d1662d966aba3dc08f53e5}} 
+\index{draws.c@{draws.c}!help@{help}}
+\index{help@{help}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structHelp}{Help}} help}
+
+\mbox{\Hypertarget{draws_8c_a5081ede0ad10bf28dfce18536dacb419}\label{draws_8c_a5081ede0ad10bf28dfce18536dacb419}} 
+\index{draws.c@{draws.c}!menu@{menu}}
+\index{menu@{menu}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structMenu}{Menu}} menu}
+
+\mbox{\Hypertarget{draws_8c_a9650fcc2735f6483fd8cf0e4ca8169b0}\label{draws_8c_a9650fcc2735f6483fd8cf0e4ca8169b0}} 
+\index{draws.c@{draws.c}!pauseWindow@{pauseWindow}}
+\index{pauseWindow@{pauseWindow}!draws.c@{draws.c}}
+\doxysubsubsection{\texorpdfstring{pauseWindow}{pauseWindow}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structPause}{Pause}} pause\+Window}
+

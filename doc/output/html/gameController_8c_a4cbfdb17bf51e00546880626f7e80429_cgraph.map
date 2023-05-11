@@ -1,0 +1,7 @@
+<map id="playGame" name="playGame">
+<area shape="rect" id="node1" title="Initializes all the game&#39;s structs." alt="" coords="5,31,95,57"/>
+<area shape="rect" id="node2" href="$entity_8c.html#af6d3971305663ba67ccf5d33c495790a" title="Initiates the entity given the type." alt="" coords="143,31,224,57"/>
+<area shape="rect" id="node3" href="$entity_8c.html#a3c4075f92b8b4c90ec5e4719826a0d69" title="Creates the array of struct Vehicle by generating random positions for them." alt="" coords="272,5,383,32"/>
+<area shape="rect" id="node5" href="$frog_8c.html#a1fda5ce5d442d925d88a7cac76e3b764" title="Initiates the frog." alt="" coords="292,56,363,83"/>
+<area shape="rect" id="node4" href="$vehicle_8c.html#ad8f74a4f0ace358582d7229148186e49" title="Initializes the vehicles." alt="" coords="431,5,521,32"/>
+</map>

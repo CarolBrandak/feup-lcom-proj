@@ -1,0 +1,370 @@
+\hypertarget{gameController_8c}{}\doxysection{/home/andre/\+Documents/shared/proj/src/game\+Controller.c File Reference}
+\label{gameController_8c}\index{/home/andre/Documents/shared/proj/src/gameController.c@{/home/andre/Documents/shared/proj/src/gameController.c}}
+{\ttfamily \#include \char`\"{}game\+Controller.\+h\char`\"{}}\newline
+Include dependency graph for game\+Controller.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameController_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_a486f7b71aa892de0f05c6187647613b9}{init\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the mouse and loads the map as well as all of the menus. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_a4cbfdb17bf51e00546880626f7e80429}{play\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Initializes all the game\textquotesingle{}s structs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_a0bac5a6de1adf0810a30a7003997412f}{check\+Pause\+Option}} ()
+\begin{DoxyCompactList}\small\item\em Checks which option is the selected one in the pause menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_a27a1ab221f211c84e92f14fce9407ebc}{update\+Mouse}} (struct packet \mbox{\hyperlink{mouse_8c_a26e83eca70c2b9169fbbb0eac7e32e32}{pp}})
+\begin{DoxyCompactList}\small\item\em Updates the \mbox{\hyperlink{structMouse}{Mouse}} struct based on the packet receiv. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_a0dba13dd701f94b0454abf8477ca829c}{Device\+Handler}} (\mbox{\hyperlink{gameController_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device}} device)
+\begin{DoxyCompactList}\small\item\em Handles all the interrupts from all the devices depending on the current state of the game, for example if the timer receives and interrupt and the state is A\+L\+I\+VE then it will draw the game but if the state is M\+E\+NU then it will draw the menu and so on. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_adc651e3d024b553b8082706cac95eb95}{ent\+Move}} ()
+\begin{DoxyCompactList}\small\item\em Moves all game entites except the frog. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_a6b174b7ece75ea95ae6e38361f88256f}{ent\+Draw}} ()
+\begin{DoxyCompactList}\small\item\em Draws all game entites. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_a6a152bf3c66c34c70b098262ca220dbd}{update\+Entities\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Updates the speed of all entities except the frog (called when the player goes to the next lvel) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_ac165fe517b083b5ccd861bf028a67b7e}{next\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Updates the current level. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_aab150031c2be1c6f6ad55dad148881ac}{check\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Checks all game events like whether the frog is on top or got hit by any entities, whether the frog has won and if it\textquotesingle{}s time for the turtles to dive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} \mbox{\hyperlink{gameController_8c_a76d5d2eba016df1778bd6e41e2df7b17}{check\+Mouse\+Event}} (struct packet \mbox{\hyperlink{mouse_8c_a26e83eca70c2b9169fbbb0eac7e32e32}{pp}})
+\begin{DoxyCompactList}\small\item\em Checks the mouse events based on the packet, like if the mouse is on top of something and if the mouse clicked on something. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{gameController_8c_a325819a8e492ac69542e8b31705af6e9}{data}}
+\item 
+struct \mbox{\hyperlink{structGame}{Game}} \mbox{\hyperlink{gameController_8c_a06c0f2a751420d266a6290a7148deafa}{game\+Controller}}
+\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{gameController_8c_a65cf7d7f8e531611b245355ab91fd749}{ready}} =true
+\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{gameController_8c_a132ba96da5ba28448b61e42c019312a9}{pressed}} =false
+\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{gameController_8c_ac746fa6ad48d19984a159f14bec028a3}{quit}} =false
+\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{gameController_8c_a33faf09da50e505c31dfe4ca64feb169}{pause\+Option1}} =true
+\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{gameController_8c_a201794d8529dcddf8275dc6a22d83313}{frog\+Idle}} =true
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{gameController_8c_a6ea2e37d367f9efa43355b0310816326}{log\+Index}}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{gameController_8c_ac85edcb51042ce1c21caaece440dc7eb}{turtle\+Index}}
+\item 
+\mbox{\hyperlink{entity_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{gameController_8c_a53421c695d00016ab925777d423b4eb6}{direction}} =\mbox{\hyperlink{entity_8h_a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa}{UP}}
+\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{gameController_8c_a7d8c6e92985cd00d395c9440fe0645b6}{code\+Done}}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{gameController_8c_a617a47c70795bcff659815ad0efd2266}{counter}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{gameController_8c_ae5af4ff48939d13d480f87e56a9385d6}{hour}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{gameController_8c_a8ff981ec55c945940f4a0da7d8709b3c}{minute}}
+\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{gameController_8c_a262fa02368f8217ca60f405cc1a163a6}{code\+Done\+Mouse}}
+\item 
+struct packet \mbox{\hyperlink{gameController_8c_ae818888612d45a261720e4f82f67bcf9}{pack}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{gameController_8c_aab150031c2be1c6f6ad55dad148881ac}\label{gameController_8c_aab150031c2be1c6f6ad55dad148881ac}} 
+\index{gameController.c@{gameController.c}!checkEvent@{checkEvent}}
+\index{checkEvent@{checkEvent}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{checkEvent()}{checkEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} check\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks all game events like whether the frog is on top or got hit by any entities, whether the frog has won and if it\textquotesingle{}s time for the turtles to dive. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameController_8c_aab150031c2be1c6f6ad55dad148881ac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameController_8c_a76d5d2eba016df1778bd6e41e2df7b17}\label{gameController_8c_a76d5d2eba016df1778bd6e41e2df7b17}} 
+\index{gameController.c@{gameController.c}!checkMouseEvent@{checkMouseEvent}}
+\index{checkMouseEvent@{checkMouseEvent}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{checkMouseEvent()}{checkMouseEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} check\+Mouse\+Event (\begin{DoxyParamCaption}\item[{struct packet}]{pp }\end{DoxyParamCaption})}
+
+
+
+Checks the mouse events based on the packet, like if the mouse is on top of something and if the mouse clicked on something. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & Current packet \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameController_8c_a76d5d2eba016df1778bd6e41e2df7b17_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameController_8c_a0bac5a6de1adf0810a30a7003997412f}\label{gameController_8c_a0bac5a6de1adf0810a30a7003997412f}} 
+\index{gameController.c@{gameController.c}!checkPauseOption@{checkPauseOption}}
+\index{checkPauseOption@{checkPauseOption}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{checkPauseOption()}{checkPauseOption()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} check\+Pause\+Option (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks which option is the selected one in the pause menu. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{gameController_8c_a0bac5a6de1adf0810a30a7003997412f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameController_8c_a0dba13dd701f94b0454abf8477ca829c}\label{gameController_8c_a0dba13dd701f94b0454abf8477ca829c}} 
+\index{gameController.c@{gameController.c}!DeviceHandler@{DeviceHandler}}
+\index{DeviceHandler@{DeviceHandler}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{DeviceHandler()}{DeviceHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} Device\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{gameController_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device}}}]{device }\end{DoxyParamCaption})}
+
+
+
+Handles all the interrupts from all the devices depending on the current state of the game, for example if the timer receives and interrupt and the state is A\+L\+I\+VE then it will draw the game but if the state is M\+E\+NU then it will draw the menu and so on. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameController_8c_a0dba13dd701f94b0454abf8477ca829c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameController_8c_a6b174b7ece75ea95ae6e38361f88256f}\label{gameController_8c_a6b174b7ece75ea95ae6e38361f88256f}} 
+\index{gameController.c@{gameController.c}!entDraw@{entDraw}}
+\index{entDraw@{entDraw}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{entDraw()}{entDraw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} ent\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws all game entites. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{gameController_8c_a6b174b7ece75ea95ae6e38361f88256f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameController_8c_adc651e3d024b553b8082706cac95eb95}\label{gameController_8c_adc651e3d024b553b8082706cac95eb95}} 
+\index{gameController.c@{gameController.c}!entMove@{entMove}}
+\index{entMove@{entMove}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{entMove()}{entMove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} ent\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Moves all game entites except the frog. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{gameController_8c_adc651e3d024b553b8082706cac95eb95_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameController_8c_a486f7b71aa892de0f05c6187647613b9}\label{gameController_8c_a486f7b71aa892de0f05c6187647613b9}} 
+\index{gameController.c@{gameController.c}!initGame@{initGame}}
+\index{initGame@{initGame}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{initGame()}{initGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} init\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the mouse and loads the map as well as all of the menus. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{gameController_8c_a486f7b71aa892de0f05c6187647613b9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameController_8c_ac165fe517b083b5ccd861bf028a67b7e}\label{gameController_8c_ac165fe517b083b5ccd861bf028a67b7e}} 
+\index{gameController.c@{gameController.c}!nextLevel@{nextLevel}}
+\index{nextLevel@{nextLevel}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{nextLevel()}{nextLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} next\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the current level. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{gameController_8c_ac165fe517b083b5ccd861bf028a67b7e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameController_8c_a4cbfdb17bf51e00546880626f7e80429}\label{gameController_8c_a4cbfdb17bf51e00546880626f7e80429}} 
+\index{gameController.c@{gameController.c}!playGame@{playGame}}
+\index{playGame@{playGame}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{playGame()}{playGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} play\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes all the game\textquotesingle{}s structs. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameController_8c_a4cbfdb17bf51e00546880626f7e80429_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameController_8c_a6a152bf3c66c34c70b098262ca220dbd}\label{gameController_8c_a6a152bf3c66c34c70b098262ca220dbd}} 
+\index{gameController.c@{gameController.c}!updateEntitiesSpeed@{updateEntitiesSpeed}}
+\index{updateEntitiesSpeed@{updateEntitiesSpeed}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{updateEntitiesSpeed()}{updateEntitiesSpeed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} update\+Entities\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the speed of all entities except the frog (called when the player goes to the next lvel) 
+
+\mbox{\Hypertarget{gameController_8c_a27a1ab221f211c84e92f14fce9407ebc}\label{gameController_8c_a27a1ab221f211c84e92f14fce9407ebc}} 
+\index{gameController.c@{gameController.c}!updateMouse@{updateMouse}}
+\index{updateMouse@{updateMouse}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{updateMouse()}{updateMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}} update\+Mouse (\begin{DoxyParamCaption}\item[{struct packet}]{pp }\end{DoxyParamCaption})}
+
+
+
+Updates the \mbox{\hyperlink{structMouse}{Mouse}} struct based on the packet receiv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & Current packet \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{gameController_8c_a7d8c6e92985cd00d395c9440fe0645b6}\label{gameController_8c_a7d8c6e92985cd00d395c9440fe0645b6}} 
+\index{gameController.c@{gameController.c}!codeDone@{codeDone}}
+\index{codeDone@{codeDone}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{codeDone}{codeDone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} code\+Done}
+
+\mbox{\Hypertarget{gameController_8c_a262fa02368f8217ca60f405cc1a163a6}\label{gameController_8c_a262fa02368f8217ca60f405cc1a163a6}} 
+\index{gameController.c@{gameController.c}!codeDoneMouse@{codeDoneMouse}}
+\index{codeDoneMouse@{codeDoneMouse}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{codeDoneMouse}{codeDoneMouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} code\+Done\+Mouse}
+
+\mbox{\Hypertarget{gameController_8c_a617a47c70795bcff659815ad0efd2266}\label{gameController_8c_a617a47c70795bcff659815ad0efd2266}} 
+\index{gameController.c@{gameController.c}!counter@{counter}}
+\index{counter@{counter}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} counter}
+
+\mbox{\Hypertarget{gameController_8c_a325819a8e492ac69542e8b31705af6e9}\label{gameController_8c_a325819a8e492ac69542e8b31705af6e9}} 
+\index{gameController.c@{gameController.c}!data@{data}}
+\index{data@{data}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data}
+
+\mbox{\Hypertarget{gameController_8c_a53421c695d00016ab925777d423b4eb6}\label{gameController_8c_a53421c695d00016ab925777d423b4eb6}} 
+\index{gameController.c@{gameController.c}!direction@{direction}}
+\index{direction@{direction}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} direction =\mbox{\hyperlink{entity_8h_a224b9163917ac32fc95a60d8c1eec3aaaba595d8bca8bc5e67c37c0a9d89becfa}{UP}}}
+
+\mbox{\Hypertarget{gameController_8c_a201794d8529dcddf8275dc6a22d83313}\label{gameController_8c_a201794d8529dcddf8275dc6a22d83313}} 
+\index{gameController.c@{gameController.c}!frogIdle@{frogIdle}}
+\index{frogIdle@{frogIdle}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{frogIdle}{frogIdle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} frog\+Idle =true}
+
+\mbox{\Hypertarget{gameController_8c_a06c0f2a751420d266a6290a7148deafa}\label{gameController_8c_a06c0f2a751420d266a6290a7148deafa}} 
+\index{gameController.c@{gameController.c}!gameController@{gameController}}
+\index{gameController@{gameController}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{gameController}{gameController}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structGame}{Game}} game\+Controller}
+
+\mbox{\Hypertarget{gameController_8c_ae5af4ff48939d13d480f87e56a9385d6}\label{gameController_8c_ae5af4ff48939d13d480f87e56a9385d6}} 
+\index{gameController.c@{gameController.c}!hour@{hour}}
+\index{hour@{hour}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily uint8\+\_\+t hour}
+
+\mbox{\Hypertarget{gameController_8c_a6ea2e37d367f9efa43355b0310816326}\label{gameController_8c_a6ea2e37d367f9efa43355b0310816326}} 
+\index{gameController.c@{gameController.c}!logIndex@{logIndex}}
+\index{logIndex@{logIndex}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{logIndex}{logIndex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} log\+Index}
+
+\mbox{\Hypertarget{gameController_8c_a8ff981ec55c945940f4a0da7d8709b3c}\label{gameController_8c_a8ff981ec55c945940f4a0da7d8709b3c}} 
+\index{gameController.c@{gameController.c}!minute@{minute}}
+\index{minute@{minute}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{minute}{minute}}
+{\footnotesize\ttfamily uint8\+\_\+t minute}
+
+\mbox{\Hypertarget{gameController_8c_ae818888612d45a261720e4f82f67bcf9}\label{gameController_8c_ae818888612d45a261720e4f82f67bcf9}} 
+\index{gameController.c@{gameController.c}!pack@{pack}}
+\index{pack@{pack}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{pack}{pack}}
+{\footnotesize\ttfamily struct packet pack}
+
+\mbox{\Hypertarget{gameController_8c_a33faf09da50e505c31dfe4ca64feb169}\label{gameController_8c_a33faf09da50e505c31dfe4ca64feb169}} 
+\index{gameController.c@{gameController.c}!pauseOption1@{pauseOption1}}
+\index{pauseOption1@{pauseOption1}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{pauseOption1}{pauseOption1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} pause\+Option1 =true}
+
+\mbox{\Hypertarget{gameController_8c_a132ba96da5ba28448b61e42c019312a9}\label{gameController_8c_a132ba96da5ba28448b61e42c019312a9}} 
+\index{gameController.c@{gameController.c}!pressed@{pressed}}
+\index{pressed@{pressed}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{pressed}{pressed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} pressed =false}
+
+\mbox{\Hypertarget{gameController_8c_ac746fa6ad48d19984a159f14bec028a3}\label{gameController_8c_ac746fa6ad48d19984a159f14bec028a3}} 
+\index{gameController.c@{gameController.c}!quit@{quit}}
+\index{quit@{quit}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{quit}{quit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} quit =false}
+
+\mbox{\Hypertarget{gameController_8c_a65cf7d7f8e531611b245355ab91fd749}\label{gameController_8c_a65cf7d7f8e531611b245355ab91fd749}} 
+\index{gameController.c@{gameController.c}!ready@{ready}}
+\index{ready@{ready}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{ready}{ready}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} ready =true}
+
+\mbox{\Hypertarget{gameController_8c_ac85edcb51042ce1c21caaece440dc7eb}\label{gameController_8c_ac85edcb51042ce1c21caaece440dc7eb}} 
+\index{gameController.c@{gameController.c}!turtleIndex@{turtleIndex}}
+\index{turtleIndex@{turtleIndex}!gameController.c@{gameController.c}}
+\doxysubsubsection{\texorpdfstring{turtleIndex}{turtleIndex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} turtle\+Index}
+

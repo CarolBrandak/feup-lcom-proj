@@ -1,0 +1,4 @@
+<map id="loadMap" name="loadMap">
+<area shape="rect" id="node1" title="Loads all the xpms that are going to be used apart from the entities." alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node2" href="$draws_8c.html#aa13653318c21b0e6b86838e6091bfc9a" title="Draws the main menu." alt="" coords="132,5,223,32"/>
+</map>

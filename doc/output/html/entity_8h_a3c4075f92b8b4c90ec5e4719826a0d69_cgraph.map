@@ -1,0 +1,4 @@
+<map id="createVehicle" name="createVehicle">
+<area shape="rect" id="node1" title="Creates the array of struct Vehicle by generating random positions for them." alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$vehicle_8c.html#ad8f74a4f0ace358582d7229148186e49" title="Initializes the vehicles." alt="" coords="164,5,255,32"/>
+</map>

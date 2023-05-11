@@ -1,0 +1,70 @@
+\hypertarget{keyboard_8h}{}\doxysection{/home/andre/\+Documents/shared/proj/src/keyboard.h File Reference}
+\label{keyboard_8h}\index{/home/andre/Documents/shared/proj/src/keyboard.h@{/home/andre/Documents/shared/proj/src/keyboard.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for keyboard.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{keyboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{keyboard_8h_a2e501907d5437509dc79f3b88a8734c3}{kdb\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes keyboard interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{keyboard_8h_a26a760321065915905d167ffc484b91f}{kdb\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes keyboard interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() \mbox{\hyperlink{keyboard_8h_aea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Keyboard interrupt handler that knows whether the makecode is of 1 or 2 bytes and stores them in an array while also changing a bool variable so that we can know when we have received the complete make code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8h_aea970a154161a35f6894898a092ed70a}\label{keyboard_8h_aea970a154161a35f6894898a092ed70a}} 
+\index{keyboard.h@{keyboard.h}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Keyboard interrupt handler that knows whether the makecode is of 1 or 2 bytes and stores them in an array while also changing a bool variable so that we can know when we have received the complete make code. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{keyboard_8h_aea970a154161a35f6894898a092ed70a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8h_a2e501907d5437509dc79f3b88a8734c3}\label{keyboard_8h_a2e501907d5437509dc79f3b88a8734c3}} 
+\index{keyboard.h@{keyboard.h}!kdb\_subscribe\_int@{kdb\_subscribe\_int}}
+\index{kdb\_subscribe\_int@{kdb\_subscribe\_int}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kdb\_subscribe\_int()}{kdb\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() kdb\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes keyboard interrupts. 
+
+\mbox{\Hypertarget{keyboard_8h_a26a760321065915905d167ffc484b91f}\label{keyboard_8h_a26a760321065915905d167ffc484b91f}} 
+\index{keyboard.h@{keyboard.h}!kdb\_unsubscribe\_int@{kdb\_unsubscribe\_int}}
+\index{kdb\_unsubscribe\_int@{kdb\_unsubscribe\_int}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{kdb\_unsubscribe\_int()}{kdb\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() kdb\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes keyboard interrupts. 
+

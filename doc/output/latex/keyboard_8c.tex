@@ -1,0 +1,118 @@
+\hypertarget{keyboard_8c}{}\doxysection{/home/andre/\+Documents/shared/proj/src/keyboard.c File Reference}
+\label{keyboard_8c}\index{/home/andre/Documents/shared/proj/src/keyboard.c@{/home/andre/Documents/shared/proj/src/keyboard.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/timer.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}macros.\+h\char`\"{}}\newline
+Include dependency graph for keyboard.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{keyboard_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{keyboard_8c_a2e501907d5437509dc79f3b88a8734c3}{kdb\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes keyboard interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() \mbox{\hyperlink{keyboard_8c_a26a760321065915905d167ffc484b91f}{kdb\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes keyboard interrupts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() \mbox{\hyperlink{keyboard_8c_aea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Keyboard interrupt handler that knows whether the makecode is of 1 or 2 bytes and stores them in an array while also changing a bool variable so that we can know when we have received the complete make code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_a53f59c8595553798e2312d9fc20f7b35}{keyboard}} \mbox{[}2\mbox{]} =\{0,0\}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{keyboard_8c_ad741d06221ef9f2ad307bffc9c9f4077}{num\+Bytes}} =0
+\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{keyboard_8c_a7d8c6e92985cd00d395c9440fe0645b6}{code\+Done}} = false
+\item 
+uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_a3e0101ab4f197aedba71e5ed14c6bf20}{stat}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_a325819a8e492ac69542e8b31705af6e9}{data}}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{keyboard_8c_a96f78a87d064e47d627d222f67a8d012}{hook\+\_\+id}} =1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8c_aea970a154161a35f6894898a092ed70a}\label{keyboard_8c_aea970a154161a35f6894898a092ed70a}} 
+\index{keyboard.c@{keyboard.c}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a5530643ebe8c633a75555509a89a5496}{void}}() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Keyboard interrupt handler that knows whether the makecode is of 1 or 2 bytes and stores them in an array while also changing a bool variable so that we can know when we have received the complete make code. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{keyboard_8c_aea970a154161a35f6894898a092ed70a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a2e501907d5437509dc79f3b88a8734c3}\label{keyboard_8c_a2e501907d5437509dc79f3b88a8734c3}} 
+\index{keyboard.c@{keyboard.c}!kdb\_subscribe\_int@{kdb\_subscribe\_int}}
+\index{kdb\_subscribe\_int@{kdb\_subscribe\_int}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kdb\_subscribe\_int()}{kdb\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() kdb\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes keyboard interrupts. 
+
+\mbox{\Hypertarget{keyboard_8c_a26a760321065915905d167ffc484b91f}\label{keyboard_8c_a26a760321065915905d167ffc484b91f}} 
+\index{keyboard.c@{keyboard.c}!kdb\_unsubscribe\_int@{kdb\_unsubscribe\_int}}
+\index{kdb\_unsubscribe\_int@{kdb\_unsubscribe\_int}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kdb\_unsubscribe\_int()}{kdb\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}}() kdb\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes keyboard interrupts. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{keyboard_8c_a7d8c6e92985cd00d395c9440fe0645b6}\label{keyboard_8c_a7d8c6e92985cd00d395c9440fe0645b6}} 
+\index{keyboard.c@{keyboard.c}!codeDone@{codeDone}}
+\index{codeDone@{codeDone}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{codeDone}{codeDone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} code\+Done = false}
+
+\mbox{\Hypertarget{keyboard_8c_a325819a8e492ac69542e8b31705af6e9}\label{keyboard_8c_a325819a8e492ac69542e8b31705af6e9}} 
+\index{keyboard.c@{keyboard.c}!data@{data}}
+\index{data@{data}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data}
+
+\mbox{\Hypertarget{keyboard_8c_a96f78a87d064e47d627d222f67a8d012}\label{keyboard_8c_a96f78a87d064e47d627d222f67a8d012}} 
+\index{keyboard.c@{keyboard.c}!hook\_id@{hook\_id}}
+\index{hook\_id@{hook\_id}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id}{hook\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} hook\+\_\+id =1}
+
+\mbox{\Hypertarget{keyboard_8c_a53f59c8595553798e2312d9fc20f7b35}\label{keyboard_8c_a53f59c8595553798e2312d9fc20f7b35}} 
+\index{keyboard.c@{keyboard.c}!keyboard@{keyboard}}
+\index{keyboard@{keyboard}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{keyboard}{keyboard}}
+{\footnotesize\ttfamily uint8\+\_\+t keyboard\mbox{[}2\mbox{]} =\{0,0\}}
+
+\mbox{\Hypertarget{keyboard_8c_ad741d06221ef9f2ad307bffc9c9f4077}\label{keyboard_8c_ad741d06221ef9f2ad307bffc9c9f4077}} 
+\index{keyboard.c@{keyboard.c}!numBytes@{numBytes}}
+\index{numBytes@{numBytes}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{numBytes}{numBytes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} num\+Bytes =0}
+
+\mbox{\Hypertarget{keyboard_8c_a3e0101ab4f197aedba71e5ed14c6bf20}\label{keyboard_8c_a3e0101ab4f197aedba71e5ed14c6bf20}} 
+\index{keyboard.c@{keyboard.c}!stat@{stat}}
+\index{stat@{stat}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{stat}{stat}}
+{\footnotesize\ttfamily uint8\+\_\+t stat}
+

@@ -1,0 +1,7 @@
+<map id="entDraw" name="entDraw">
+<area shape="rect" id="node1" title="Draws all game entites." alt="" coords="5,56,83,83"/>
+<area shape="rect" id="node2" href="$draws_8c.html#a937528253ca74c0bc6b17834ce4ad1ea" title="Draws the information bar." alt="" coords="134,5,210,32"/>
+<area shape="rect" id="node4" href="$entity_8c.html#a2a7e11f776da89351b15069c96267302" title="Draws frog in its position and in the correct direction." alt="" coords="131,56,213,83"/>
+<area shape="rect" id="node5" href="$graphics__card_8c.html#aef65eb37ccde0d764deb148a6af80344" title="Copies the buffer to the virtual adress of memory." alt="" coords="134,107,210,133"/>
+<area shape="rect" id="node3" href="$draws_8c.html#a54bf0c3e09e69e16bf5afcfd857ee673" title="Draws the hours and minutes on the information bar." alt="" coords="261,5,348,32"/>
+</map>

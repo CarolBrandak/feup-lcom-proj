@@ -1,0 +1,9 @@
+<map id="Game" name="Game">
+<area shape="rect" id="node1" title="Struct game that stores the whole game information, it has the current level, current number of lives..." alt="" coords="64,184,125,211"/>
+<area shape="rect" id="node2" href="$structMouse.html" title="Mouse struct with mouse images for regular mouse and hovering mouse as well as position and bool to k..." alt="" coords="22,95,87,121"/>
+<area shape="rect" id="node3" href="$structEntity.html" title="Struct entity that has Structs of entities it will have as well as the number of those entities and t..." alt="" coords="111,95,171,121"/>
+<area shape="rect" id="node4" href="$structLog.html" title="Log struct that has the log xpm and its position." alt="" coords="5,5,51,32"/>
+<area shape="rect" id="node5" href="$structFrog.html" title="Struct frog to store the frog&#39;s position, xpm images for the animation and the index of which is the ..." alt="" coords="75,5,125,32"/>
+<area shape="rect" id="node6" href="$structVehicle.html" title="Vehicle struct that has the image of both the truck and car and has a bool that lets it know what it ..." alt="" coords="149,5,219,32"/>
+<area shape="rect" id="node7" href="$structTurtle.html" title="Turtle struct that has the image of three different turtles, the regular one, the one underwater duri..." alt="" coords="243,5,301,32"/>
+</map>

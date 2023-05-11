@@ -1,0 +1,6 @@
+<map id="int" name="int">
+<area shape="rect" id="node1" title="Draws the background where it can either be day or night." alt="" coords="5,5,44,32"/>
+<area shape="rect" id="node2" href="$graphics__card_8c.html#a99d2da2559e11200c6b40c469e9977ec" title=" " alt="" coords="92,5,237,32"/>
+<area shape="rect" id="node3" href="$graphics__card_8c.html#a5e5b25bd525250f61f40b9e9f212d5e6" title=" " alt="" coords="285,5,401,32"/>
+<area shape="rect" id="node4" href="$graphics__card_8c.html#a13dedae596f8db49682ee2bc77ce5568" title="Changes the color of one pyxel in the given position and to the color given in the argument and does ..." alt="" coords="449,5,584,32"/>
+</map>

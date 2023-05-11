@@ -1,0 +1,5 @@
+<map id="rtc_ih" name="rtc_ih">
+<area shape="rect" id="node1" title="RTC interrupt handler that makes sure there are no erros and updates the varibales of hours and minut..." alt="" coords="5,31,64,57"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#a72dfeb3c07829a9cb89ef9cdc9e9e61f" title="Converts an hexadecimal value to int so that the written value is the same, for example if the value ..." alt="" coords="129,5,192,32"/>
+<area shape="rect" id="node3" href="$rtc_8c.html#af891c1669b5ea650f4827a67d9b0e769" title="Waits for an rtc update so that we can make sure we won&#39;t have any errors while waiting for its inter..." alt="" coords="112,56,209,83"/>
+</map>

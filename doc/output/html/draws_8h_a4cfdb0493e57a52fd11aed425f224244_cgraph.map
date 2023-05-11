@@ -1,0 +1,4 @@
+<map id="drawMouse" name="drawMouse">
+<area shape="rect" id="node1" title="Draws the mouse." alt="" coords="5,5,103,32"/>
+<area shape="rect" id="node2" href="$graphics__card_8c.html#aef65eb37ccde0d764deb148a6af80344" title="Copies the buffer to the virtual adress of memory." alt="" coords="151,5,227,32"/>
+</map>

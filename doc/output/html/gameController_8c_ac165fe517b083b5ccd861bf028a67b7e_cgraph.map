@@ -1,0 +1,4 @@
+<map id="nextLevel" name="nextLevel">
+<area shape="rect" id="node1" title="Updates the current level." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" href="$gameController_8c.html#a6a152bf3c66c34c70b098262ca220dbd" title="Updates the speed of all entities except the frog (called when the player goes to the next lvel)" alt="" coords="140,5,296,32"/>
+</map>

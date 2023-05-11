@@ -1,0 +1,93 @@
+\hypertarget{structGame}{}\doxysection{Game Struct Reference}
+\label{structGame}\index{Game@{Game}}
+
+
+Struct game that stores the whole game information, it has the current level, current number of lives, bool to know if it is day or night, time array for hours and minutes, game\+State to know the current state of the game, Array of entities to store all the entities and then the \mbox{\hyperlink{structMouse}{Mouse}} struct.  
+
+
+
+
+{\ttfamily \#include $<$game\+Controller.\+h$>$}
+
+
+
+Collaboration diagram for Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{structGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{structGame_abe14118bc7cb70c342636c2b2a15554b}{level}}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{structGame_aa65dc796ac407c6e5ffaab155530c90a}{lives}}
+\item 
+\mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} \mbox{\hyperlink{structGame_a49dc2178c5773c97f3f625ba8d98d0cb}{day}}
+\item 
+\mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} \mbox{\hyperlink{structGame_ad1e937d50668bc9b48f7cce464d6c132}{time}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{gameController_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}} \mbox{\hyperlink{structGame_a5ca5069bee13da4e708d4d845ffd2835}{game\+State}}
+\item 
+struct \mbox{\hyperlink{structEntity}{Entity}} \mbox{\hyperlink{structGame_a100c44949ebde38e4fb06620f4ead94f}{entities}} \mbox{[}4\mbox{]}
+\item 
+\mbox{\hyperlink{structMouse}{Mouse}} \mbox{\hyperlink{structGame_add7700707552a634b935cd7aa8f8699d}{mouse}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct game that stores the whole game information, it has the current level, current number of lives, bool to know if it is day or night, time array for hours and minutes, game\+State to know the current state of the game, Array of entities to store all the entities and then the \mbox{\hyperlink{structMouse}{Mouse}} struct. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structGame_a49dc2178c5773c97f3f625ba8d98d0cb}\label{structGame_a49dc2178c5773c97f3f625ba8d98d0cb}} 
+\index{Game@{Game}!day@{day}}
+\index{day@{day}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a31ba02fef156b93f0f56f611b98b66a5}{bool}} Game\+::day}
+
+\mbox{\Hypertarget{structGame_a100c44949ebde38e4fb06620f4ead94f}\label{structGame_a100c44949ebde38e4fb06620f4ead94f}} 
+\index{Game@{Game}!entities@{entities}}
+\index{entities@{entities}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{entities}{entities}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structEntity}{Entity}} Game\+::entities\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{structGame_a5ca5069bee13da4e708d4d845ffd2835}\label{structGame_a5ca5069bee13da4e708d4d845ffd2835}} 
+\index{Game@{Game}!gameState@{gameState}}
+\index{gameState@{gameState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{gameController_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}} Game\+::game\+State}
+
+\mbox{\Hypertarget{structGame_abe14118bc7cb70c342636c2b2a15554b}\label{structGame_abe14118bc7cb70c342636c2b2a15554b}} 
+\index{Game@{Game}!level@{level}}
+\index{level@{level}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} Game\+::level}
+
+\mbox{\Hypertarget{structGame_aa65dc796ac407c6e5ffaab155530c90a}\label{structGame_aa65dc796ac407c6e5ffaab155530c90a}} 
+\index{Game@{Game}!lives@{lives}}
+\index{lives@{lives}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{lives}{lives}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} Game\+::lives}
+
+\mbox{\Hypertarget{structGame_add7700707552a634b935cd7aa8f8699d}\label{structGame_add7700707552a634b935cd7aa8f8699d}} 
+\index{Game@{Game}!mouse@{mouse}}
+\index{mouse@{mouse}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMouse}{Mouse}} Game\+::mouse}
+
+\mbox{\Hypertarget{structGame_ad1e937d50668bc9b48f7cce464d6c132}\label{structGame_ad1e937d50668bc9b48f7cce464d6c132}} 
+\index{Game@{Game}!time@{time}}
+\index{time@{time}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_8h_a891b4e7f8ac178e91b465092beaa50cd}{int}} Game\+::time\mbox{[}2\mbox{]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/andre/\+Documents/shared/proj/src/\mbox{\hyperlink{gameController_8h}{game\+Controller.\+h}}\end{DoxyCompactItemize}

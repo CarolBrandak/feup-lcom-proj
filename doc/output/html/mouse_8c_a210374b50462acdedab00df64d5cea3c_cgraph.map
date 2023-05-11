@@ -1,0 +1,5 @@
+<map id="mouse_ih" name="mouse_ih">
+<area shape="rect" id="node1" title="Mouse interrupt handler that knows exactly what byte it is going to receive from the output buffer (o..." alt="" coords="5,31,91,57"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a1d6e1e91145b734ed5955cc9657a7448" title="Builds a packet based on the 3 bytes received during the interrupts." alt="" coords="140,5,236,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title=" " alt="" coords="139,56,237,83"/>
+</map>
